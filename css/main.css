@@ -302,3 +302,12 @@ main{overflow-wrap:break-word}
 .figimg{margin:24px 0}
 .figimg img{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--line)}
 .figimg figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+
+.findgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:22px}
+.findcol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+.findcol h3{font-size:16px;margin-bottom:10px}
+.findcol ul{list-style:none;display:grid;gap:6px}
+.findcol a{color:var(--indigo);font-weight:600;text-decoration:none;font-size:15px}
+.findcol a:hover{text-decoration:underline}
+@media(max-width:900px){.findgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.findgrid{grid-template-columns:minmax(0,1fr)}}
